@@ -11,4 +11,7 @@ flake::
 isort::
 	isort .
 
-lint:: black-check isort-check flake
+test-run::
+	python -m ml-detection.detect_objects
+
+lint:: black isort flake
